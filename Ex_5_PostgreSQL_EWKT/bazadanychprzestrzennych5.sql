@@ -32,7 +32,7 @@ INSERT INTO obiekty VALUES('obiekt5', ST_GeomFromEWKT( 'MULTIPOINT Z ((30 30 59)
 	-- obiekt 6
 INSERT INTO obiekty VALUES('obiekt6', ST_GeomFromEWKT( 'GEOMETRYCOLLECTION ( POINT(4 2), LINESTRING(1 1, 3 2))' ));
 
-SELECT o.nazwa, ST_AsText(o.geom), o.geom FROM obiekty o ORDER BY o.nazwa;
+SELECT o.nazwa, ST_AsText(o.geom), ST_CurveToLine(o.geom) FROM obiekty o ORDER BY o.nazwa;
 
 -- 1. Wyznacz pole powierzchni bufora o wielkości 5 jednostek, ktory zostal utworzony wokol najkrotszej linii laczacej
 --    obiekt 3 i 4
@@ -62,13 +62,21 @@ SELECT SUM(ST_Area(ST_Buffer(geom,5)))
 FROM obiekty
 WHERE ST_HasArc(geom)=FALSE;
 
+select st_area(st_buffer(geom,5)) from obiekty 
+
 -- workspace
 DELETE FROM probne
 INSERT INTO probne VALUES('obiekt4', ST_GeomFromEWKT( 'MULTILINESTRING((20 20, 25 25, 27 24, 25 22, 26 21, 22 19, 20.5 19.5))' ));
 
 UPDATE probne
-SET geom = (SELECT ST_Polygonize(ST_Union(geom, ST_MakeLine((SELECT ST_StartPoint(ST_AsText(geom)) FROM probne WHERE nazwa='obiekt4'), (SELECT ST_EndPoint(ST_AsText(geom)) FROM probne WHERE nazwa='obiekt4')))) FROM probne WHERE nazwa='obiekt4')
+SET geom = (SELECT ST_MakePolygon(ST_Union(geom, ST_MakeLine((SELECT ST_StartPoint(ST_AsText(geom)) 
+															 FROM probne WHERE nazwa='obiekt4'), 
+															(SELECT ST_EndPoint(ST_AsText(geom)) 
+															 FROM probne WHERE nazwa='obiekt4')))) 
+			FROM probne WHERE nazwa='obiekt4')
 WHERE nazwa='obiekt4';
+
+Select * from probne W
 
 
 SELECT * FROM probne
