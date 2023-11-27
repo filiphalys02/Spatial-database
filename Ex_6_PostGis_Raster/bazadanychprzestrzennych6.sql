@@ -52,33 +52,36 @@ WHERE b.municipality ilike 'porto' and ST_Intersects(b.geom,a.rast);
 	-- PrzykLad 1 - ST_AsRaster
 	-- przyklad pokazuje uzycie funkcji ST_AsRaster w celu rastrowania tabeli z parafiami o takiej
 	-- samej charakterystyce przestrzennej tj.: wielkosc piksela, zakresy itp.
+DROP TABLE halys.porto_parishes;
 CREATE TABLE halys.porto_parishes AS
 WITH r AS (
-SELECT rast FROM rasters.dem
-LIMIT 1
+	SELECT rast FROM rasters.dem
+	LIMIT 1
 )
 SELECT ST_AsRaster(a.geom,r.rast,'8BUI',a.id,-32767) AS rast
 FROM vectors.porto_parishes AS a, r
 WHERE a.municipality ilike 'porto';
+SELECT * FROM halys.porto_parishes;
 
 	-- Przyklad 2 - ST_Union
 	-- wynikowy raster z poprzedniego zadania to jedna parafia na rekord, na wiersz tabeli. Uzyj QGIS lub
 	-- ArcGIS do wizualizacji wyników.
 	-- drugi przyklad laczy rekordy z poprzedniego przykladu przy uzyciu funkcji ST_UNION w pojedynczy raster
-DROP TABLE halys.porto_parishes;
-CREATE TABLE halys.porto_parishes AS
+DROP TABLE halys.porto_parishes2;
+CREATE TABLE halys.porto_parishes2 AS
 WITH r AS (
-SELECT rast FROM rasters.dem
-LIMIT 1
+	SELECT rast FROM rasters.dem
+	LIMIT 1
 )
 SELECT st_union(ST_AsRaster(a.geom,r.rast,'8BUI',a.id,-32767)) AS rast
 FROM vectors.porto_parishes AS a, r
 WHERE a.municipality ilike 'porto';
+SELECT * FROM halys.porto_parishes2;
+
 
 	-- Przyklad 3 - ST_Tile
 	-- po uzyskaniu pojedynczego rastra mozna generowac kafelki za pomoca funkcji ST_Tile.
-DROP TABLE halys.porto_parishes;
-CREATE TABLE halys.porto_parishes AS
+CREATE TABLE halys.porto_parishes3 AS
 WITH r AS (
 SELECT rast FROM rasters.dem
 LIMIT 1 )
@@ -86,6 +89,7 @@ SELECT st_tile(st_union(ST_AsRaster(a.geom,r.rast,'8BUI',a.id,-
 32767)),128,128,true,-32767) AS rast
 FROM vectors.porto_parishes AS a, r
 WHERE a.municipality ilike 'porto';
+SELECT * FROM halys.porto_parishes3;
 
 
 -- KONWERTOWANIE RASTROW NA WEKTORY (WEKTORYZOWANIE)
