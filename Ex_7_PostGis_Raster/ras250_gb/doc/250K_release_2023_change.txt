@@ -1,0 +1,64 @@
+1:250 000 Scale Colour Raster…Release Change file 2023
+
+IMPORTANT – PLEASE READ CAREFULLY
+
+Your right to use the data stored on this media or downloaded from the Internet File Transfer Protocol (FTP) Files (Data) is subject to your existing licence agreement(s) with Ordnance Survey (Existing Licence Agreement(s)).     
+
+Your use of the Data is limited to the scope of use set out in your Existing Licence Agreement(s).
+
+
+Further Information
+**********************
+If you have any questions or need more information, please contact: 
+   
+   Customer Service Centre,
+   Ordnance Survey,
+   Adanac Drive,
+   SOUTHAMPTON
+   United Kingdom
+   SO16 0AS.
+
+Phone: 03456 05 05 05   
+
+Textphone: 023 8005 6146
+
+Email: customerservices@os.uk
+
+
+Website:os.uk 
+
+The latest product information and support can be found at the following Ordnance Survey Websites for 1:250 000 Scale Colour Raster.
+
+os.uk/business-and-government/products/250k-raster.html
+os.uk/business-and-government/help-and-support/products/250k-raster.html
+
+
+*********************************************************************************************************************************************************
+1:250 000 Scale Colour Raster Changes
+
+England
+A523 - Poynton Relief Road, shown as an Open Green Primary Route Road at 390664E 382691N on Tile SJ. Previously shown as Under Construction
+
+Scotland
+A92 - Downgraded from Green Primary Route to Red A Road at 391023E 806410N on Tile NJ
+
+Wales
+Welsh text PARC CENEDLAETHOL BANNAU BRYCHEINIOG added for BRECON BEACONS NATIONAL PARK, previously only the English text was shown at 304111E 220027N on Tile SO
+
+Trademarks
+**************
+Ordnance Survey and the OS Symbol are registered trademarks of
+Ordnance Survey, the national mapping agency of Great Britain.
+
+Adobe, the Adobe logo, Acrobat, the Acrobat logo and Acrobat Reader are trademarks or registered trademarks of Adobe Systems incorporated. 
+
+ESRI is a registered trademark of ESRI (UK).
+MapInfo is a registered trademark of MapInfo.
+AutoCAD is a registered trademark and DXF a trademark of Autodesk Incorporated.  All other trademarks are the property of their respective owners and are acknowledged.
+
+
+
+----------------------------------------------------------------------------------------------------
+README FILE CREATED BY ORDNANCE SURVEY, © June 2023
+----------------------------------------------------------------------------------------------------
+V1.3
