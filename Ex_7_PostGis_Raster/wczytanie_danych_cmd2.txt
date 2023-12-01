@@ -1,0 +1,15 @@
+raster2pgsql.exe -s 32630 -N -32767 -t 254x254 -I -C -M -d "C:\Bazy-danych-przestrzennych\Ex_7_PostGis_Raster\S2A_MSIL2A_20231110T112311_N0509_R037_T30UWF_20231110T150402.SAFE\GRANULE\L2A_T30UWF_A043792_20231110T112305\IMG_DATA\R10m\T30UWF_20231110T112311_B04_10m.jp2" public.sentinel2_band4_1 | psql -d bazadanychprzestrzennych7 -h localhost -U postgres -p 5432
+
+raster2pgsql.exe -s 32630 -N -32767 -t 254x254 -I -C -M -d "C:\Bazy-danych-przestrzennych\Ex_7_PostGis_Raster\S2A_MSIL2A_20231110T112311_N0509_R037_T30UWF_20231110T150402.SAFE\GRANULE\L2A_T30UWF_A043792_20231110T112305\IMG_DATA\R10m\T30UWF_20231110T112311_B08_10m.jp2" public.sentinel2_band8_1 | psql -d bazadanychprzestrzennych7 -h localhost -U postgres -p 5432
+
+
+
+raster2pgsql.exe -s 32630 -N -32767 -t 254x254 -I -C -M -d "C:\Bazy-danych-przestrzennych\Ex_7_PostGis_Raster\S2A_MSIL2A_20231130T112421_N0509_R037_T30UVF_20231130T145050.SAFE\GRANULE\L2A_T30UVF_A044078_20231130T112419\IMG_DATA\R10m\T30UVF_20231130T112421_B04_10m.jp2" public.sentinel2_band4_2 | psql -d bazadanychprzestrzennych7 -h localhost -U postgres -p 5432
+
+raster2pgsql.exe -s 32630 -N -32767 -t 254x254 -I -C -M -d "C:\Bazy-danych-przestrzennych\Ex_7_PostGis_Raster\S2A_MSIL2A_20231130T112421_N0509_R037_T30UVF_20231130T145050.SAFE\GRANULE\L2A_T30UVF_A044078_20231130T112419\IMG_DATA\R10m\T30UVF_20231130T112421_B08_10m.jp2" public.sentinel2_band8_2 | psql -d bazadanychprzestrzennych7 -h localhost -U postgres -p 5432
+
+
+
+raster2pgsql.exe -s 32630 -N -32767 -t 254x254 -I -C -M -d "C:\Bazy-danych-przestrzennych\Ex_7_PostGis_Raster\S2A_MSIL2A_20231110T112311_N0509_R037_T30UWF_20231110T150402.SAFE\GRANULE\L2A_T30UWF_A043792_20231110T112305\IMG_DATA\R10m\T30UWF_20231110T112311_B03_10m.jp2" public.sentinel2_band3_1 | psql -d bazadanychprzestrzennych7 -h localhost -U postgres -p 5432
+
+raster2pgsql.exe -s 32630 -N -32767 -t 254x254 -I -C -M -d "C:\Bazy-danych-przestrzennych\Ex_7_PostGis_Raster\S2A_MSIL2A_20231130T112421_N0509_R037_T30UVF_20231130T145050.SAFE\GRANULE\L2A_T30UVF_A044078_20231130T112419\IMG_DATA\R10m\T30UVF_20231130T112421_B03_10m.jp2" public.sentinel2_band3_2 | psql -d bazadanychprzestrzennych7 -h localhost -U postgres -p 5432
