@@ -1,0 +1,88 @@
+   ORDNANCE SURVEY DATA SUPPLY
+   ------------------------------------------------------
+   1:250 000 SCALE RASTER DATA
+   -------------------------------------------------
+
+   IMPORTANT PLEASE READ CAREFULLY
+
+   The information contained within this document is divided into sections:
+
+      SECTION 1 - SUPPLY
+ INFORMATION
+      SECTION 2 - FORMAT INFORMATION
+      SECTION 3 - TILE CONTENT OF AREAS
+      SECTION 4 - GAZETTEER
+
+
+
+   **************************************************************
+   SECTION 1 – SUPPLY INFORMATION
+   **************************************************************
+   SUPPLY INFORMATION
+
+   Customers will need to refer to the information appropriate to their order.
+
+    CREATION DATE:  DD/MM/YY
+    RECORDING CODE: ISO 9660 (JOLIET, MODE1)
+
+   
+
+   **********************************************
+   SECTION 2 – FORMAT INFORMATION
+   **********************************************
+   FORMATS INFORMATION
+
+
+   The product is supplied in TIFF Raster format with or without LZW compression.
+
+
+
+   *********************************************
+   SECTION 3 –TILE CONTENT OF AREAS
+   *********************************************
+   TILE CONTENT OF AREAS
+
+   Full GB coverage is supplied. All the Tile contents are listed below. 
+
+  
+   *********
+   3a   GB
+   *********
+   
+    
+   HP   HT   HU   HW   HX   HY   HZ
+   NA   NB   NC   ND   NF   NG   NH
+   NJ   NK   NL   NM   NN   NO   NR
+   NS   NT   NU   NW   NX   NY   NZ
+   OV   SC   SD   SE   SH   SJ   SK
+   SM   SN   SO   SP   SR   SS   ST
+   SU   SV   SW   SX   SY   SZ   TA
+   TF   TG   TL   TM   TQ   TR   TV
+   
+   TOTAL 56 TILES
+
+
+
+
+   *********************************
+   SECTION 4 – GAZETTEER
+   *********************************
+
+   GAZETTEER
+   This information is provided as a single text file within the DATA
+   Directory. It is provided as GB only.
+
+   The GAZETTEER AREA EXTENT is as follows:
+
+                        Easting    Northing
+      SW coordinate -         0           0
+      NE coordinate -    700000     1300000
+
+   Covering the extent of the 56 100 km by 100 km tiles
+
+
+
+   ----------------------------------------------------------------------------------------------------
+   README FILE CREATED BY ORDNANCE SURVEY, © June 2023
+   ----------------------------------------------------------------------------------------------------
+V1.3
