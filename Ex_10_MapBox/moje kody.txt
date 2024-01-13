@@ -1,0 +1,30 @@
+moje kody
+
+$uri = "https://api.mapbox.com/uploads/v1/filiphalys02/credentials?access_token=sk.eyJ1IjoiZmlsaXBoYWx5czAyIiwiYSI6ImNscmM3NjdpdDBzdmgyaXBqYWg2ZmhqczcifQ.6u3bKBP1agQlOVCIon1HHA"
+
+Invoke-RestMethod -Uri $uri -Method Post
+
+$env:AWS_ACCESS_KEY_ID ="ASIATNLVGLR2B7JIG7ZT"
+
+$env:AWS_SECRET_ACCESS_KEY = "V0ZH19R5exPMnqexhAxqmBNdxRJ0I2E3XDxkxfVJ"
+
+$env:AWS_SESSION_TOKEN = "FwoGZXIvYXdzEMn//////////wEaDGulfZwWGV4DW5QmhiKeAmWq3Rr9YwOCpIYeP1yLIWX2IlAE/m4rrdb4JNkJueyT/j3l8WsdIV10sciZYwmulnhuV+RVE9o587Irk0vINNAtcakLuExDKxtX8p3wK8S5xO1D0fM/jSWLN5I040GuCqiBlm2akguj8QA+OPJsjoCPVjHdf+kSldl+/jw6inEMmAQUAXqpQgA5b/A4NaRKsM2OrvNB6QXG84uBJ+VciURwJvjIql+aHJt5LKCMS3PP3BPeTpWbIdIN34/sJ1MtO3UXua4q2anLw+pfPpK39ttbl8gytua5vWMEVLrDJnmvetyPdf5oqNPK/+XgD55XmNxVfzNyz/aCqzO5m5u5HiAPAWZmgoIFBeOcZdg/mEe61KWtWRPQhTGn2baool0o1tmKrQYyKTiArEuTZ7oejBmnBSMrBQ7Nvjo62qjz4TxjK9Scpe6DdwGV6DUBLmE8"
+
+aws s3 cp T2019_KAR_POI_TABLE.zip s3://tilestream-tilesets-production/6b/_pending/wuq1ca2pgpu1jt60j4b68crlc/filiphalys02 --region eu-north-1
+
+$url = "https://api.mapbox.com/uploads/v1/filiphalys02?access_token=sk.eyJ1IjoiZmlsaXBoYWx5czAyIiwiYSI6ImNscmM3NjdpdDBzdmgyaXBqYWg2ZmhqczcifQ.6u3bKBP1agQlOVCIon1HHA"
+
+$headers = @{
+    "Content-Type" = "application/json"
+    "Cache-Control" = "no-cache"
+}
+
+
+$body = @{
+    url = "https://tilestream-tilesets-production.s3.amazonaws.com/6b/_pending/wuq1ca2pgpu1jt60j4b68crlc/filiphalys02"
+    tileset = "filiphalys02.traverse-bay"
+    name = "Traverse Bay"
+} | ConvertTo-Json
+
+
+Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $body

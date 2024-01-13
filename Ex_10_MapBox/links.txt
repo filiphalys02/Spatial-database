@@ -1,0 +1,5 @@
+https://api.mapbox.com/styles/v1/filiphalys02/clrc1h9ob00aa01p4hbo12j6g.html?title=view&access_token=pk.eyJ1IjoiZmlsaXBoYWx5czAyIiwiYSI6ImNscmMwbTY3ejAxOTQyaWxhY3lhMXJuemgifQ.MPPrrmCVdo_rOGfQLiSDzg&zoomwheel=true&fresh=true#9.58/41.8408/-87.6745
+
+https://api.mapbox.com/styles/v1/filiphalys02/clrc1y4ac009901qn3ac1els8.html?title=view&access_token=pk.eyJ1IjoiZmlsaXBoYWx5czAyIiwiYSI6ImNscmMwbTY3ejAxOTQyaWxhY3lhMXJuemgifQ.MPPrrmCVdo_rOGfQLiSDzg&zoomwheel=true&fresh=true#18.02/49.017548/8.381748
+
+https://api.mapbox.com/styles/v1/filiphalys02/clrc8qt4600a301pi40ln1vp7.html?title=view&access_token=pk.eyJ1IjoiZmlsaXBoYWx5czAyIiwiYSI6ImNscmMwbTY3ejAxOTQyaWxhY3lhMXJuemgifQ.MPPrrmCVdo_rOGfQLiSDzg&zoomwheel=true&fresh=true#10.86/48.991/8.4266
