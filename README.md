@@ -1,5 +1,5 @@
   
-# Reopository created for the purpose of Spatial database course during studies 
+# Repository created for the purpose of Spatial database course during studies 
 
 ### Technologies used in the course:
 - SQL (PostgreSQL)
